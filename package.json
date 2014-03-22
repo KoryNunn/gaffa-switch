@@ -1,0 +1,22 @@
+{
+  "name": "gaffa-switch",
+  "author": "Kory Nunn <knunn187@gmail.com>",
+  "version": "1.0.0",
+  "main": "switch.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KoryNunn/gaffa-switch.git"
+  },
+  "bugs": {
+    "url": "https://github.com/KoryNunn/gaffa-switch/issues"
+  },
+  "keywords": [
+    "gaffa",
+    "switch",
+    "action"
+  ],
+  "peerDependencies": {
+    "gaffa": "^1.0.0"
+  },
+  "license": "MIT"
+}
