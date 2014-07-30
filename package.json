@@ -18,5 +18,10 @@
   "peerDependencies": {
     "gaffa": "^1.0.0"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "description": "switch action for gaffa",
+  "homepage": "https://github.com/KoryNunn/gaffa-switch",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
 }
