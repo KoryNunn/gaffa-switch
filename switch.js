@@ -1,15 +1,18 @@
-var Gaffa = require('gaffa'),
-    actionType = "switch";
+var Gaffa = require('gaffa');
 
 function Switch(){}
 Switch = Gaffa.createSpec(Switch, Gaffa.Action);
-Switch.prototype.type = actionType;
+Switch.prototype._type = 'switch';
 Switch.prototype['switch'] = new Gaffa.Property();
 
 Switch.prototype.trigger = function(parent, scope, event) {
 
-    if(this['switch'].value != null){
-        this.triggerActions(this['switch'].value, scope, event);
+    var switchValue = this['switch'].value;
+
+    if(this.actions[switchValue]){
+        this.triggerActions(switchValue, scope, event);
+    }else if(this.actions['default']){
+        this.triggerActions('default', scope, event);
     }
 };
 
